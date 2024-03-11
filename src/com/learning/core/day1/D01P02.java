@@ -1,4 +1,33 @@
 package com.learning.core.day1;
+interface MedicineInfo {
+	
+	void displayLabel();
+}
+class Ointment implements MedicineInfo{
+
+	public void displayLabel() {
+		// TODO Auto-generated method stub
+		System.out.println("Ointment is for external use only");
+	}
+
+}
+
+class Syrup implements MedicineInfo{
+
+	public void displayLabel() {
+		// TODO Auto-generated method stub
+		System.out.println("Syrup is consumable only on prescription");
+	}
+
+}
+
+class Tablet implements MedicineInfo{
+	public void displayLabel() {
+		// TODO Auto-generated method stub
+		System.out.println("Store Tablet in cool dry places");
+		
+	}
+}
 
 public class D01P02 {
 
